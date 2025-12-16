@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizza Nusantara - Cita Rasa Autentik Indonesia</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <style>
+    .hero {
+      background: linear-gradient(120deg, #d12c00, #ff7043);
+      color: #fff;
+      padding: 6rem 2rem;
+    }
+
+    .hero-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 2rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .hero-content .text {
+      flex: 1 1 45%;
+    }
+
+    .hero-content .text .special {
+      color: #ffe5e5;
+      font-size: 0.9rem;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+
+    .hero-content .text h2 {
+      font-size: 2.6rem;
+      margin: 1rem 0;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+
+    .hero-content .text p {
+      font-size: 1rem;
+      margin-bottom: 1.8rem;
+      color: #fff8f5;
+      line-height: 1.6;
+    }
+
+
+    .card {
+      position: relative;
+      background: var(--light, #fff);
+      border-radius: var(--radius, 12px);
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+      padding: 1rem;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .card img {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      border-radius: var(--radius, 12px);
+    }
+
+    .card h4 {
+      font-size: 1.3rem;
+      margin: 0.6rem 0;
+      color: #333;
+    }
+
+    .card p {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #444;
+    }
+
+    .card ul {
+      margin: 0.5rem 0 1rem 1rem;
+      padding-left: 1rem;
+      color: #555;
+      font-size: 0.95rem;
+      line-height: 1.5;
+      list-style-type: disc;
+      text-align: left;
+    }
+
+    .card ul li {
+      margin-bottom: 3px;
+    }
+
+    .video-container {
+      margin-top: 2rem;
+      text-align: center;
+    }
+
+    .video-container video {
+      width: 90%;
+      max-width: 700px;
+      height: 420px; 
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .testi-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    blockquote {
+      background: #fff8f5;
+      border-left: 5px solid #ff7043;
+      padding: 1rem;
+      border-radius: 8px;
+      font-style: italic;
+      position: relative;
+    }
+
+    blockquote audio {
+      display: block;
+      width: 80%;
+      margin: 0.6rem auto 0;
+      border-radius: 6px;
+      height: 25px; 
+    }
+
+    cite {
+      display: block;
+      margin-top: 0.8rem;
+      text-align: right;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    .menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.2rem;
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.card {
+  background: var(--light);
+  border-radius: var(--radius);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+  padding: 1rem;
+  
+}
+
+.card img {
+  width: 100%;
+  aspect-ratio: 1 / 1;  
+  object-fit: cover;
+  border-radius: var(--radius);
+}
+
+.card h4 {
+  margin-top: 0.8rem;
+  color: var(--dark);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.card p {
+  color: #777;
+  font-size: 0.95rem;
+  margin-top: 0.3rem;
+}
+
+
+.testimoni {
+  background: var(--light);
+  padding: 3rem 0;
+  text-align: center; 
+}
+
+.testi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.2rem;
+  max-width: 800px; 
+  margin: 1rem auto 0; 
+}
+
+blockquote {
+  background: #fff8f5;
+  border-left: 5px solid #ff7043;
+  padding: 1.2rem;
+  border-radius: 8px;
+  font-style: italic;
+  position: relative;
+}
+
+blockquote audio {
+  display: block;
+  width: 80%;
+  margin: 0.6rem auto 0;
+  border-radius: 6px;
+  height: 25px;
+}
+
+blockquote cite {
+  display: block;
+  text-align: right;
+  margin-top: 0.8rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+  </style>
+
+  <header class="navbar">
+    <div class="container">
+      <h1 class="logo">🍕 Pizza<span>Nusantara</span></h1>
+      <nav>
+        <ul class="nav-links">
+         <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="galery.html">Menu</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero red-theme">
+    <div class="hero-content">
+      <div class="text">
+        <h4 class="special">PIZZA TERBAIK DI INDONESIA</h4>
+        <h2>Nikmati<br>Pizza Hangat Setiap Hari</h2>
+        <p>Rasakan sensasi keju leleh, topping melimpah, dan adonan buatan tangan khas <strong>Pizza Nusantara</strong> — perpaduan cita rasa lokal dan Italia yang menggoda selera!</p>
+        <a href="contact.html" class="btn-primary">Pesan Sekarang</a>
+      </div>
+      <div class="image">
+        <img src="images/pizza_index.png" alt="Pizza Nusantara">
+      </div>
+    </div>
+  </section>
+
+<section class="menu">
+  <div class="container">
+    <h3>Trending Menu 🔥</h3>
+    <p style="margin-top:0.5rem; color:#555;">
+      Pilih pizza favoritmu — dibuat dari bahan segar dengan cita rasa khas Italia & sentuhan lokal.
+    </p>
+    
+    <div class="menu-grid">
+      <div class="card">
+        <img src="images/pizza_mozzarela.png" alt="Pizza Mozzarella">
+        <h4>Pizza Mozzarella</h4>
+        <ul>
+          <li>Keju mozzarella premium</li>
+          <li>Saus tomat segar</li>
+          <li>Taburan basil wangi</li>
+        </ul>
+        <p>
+    <del style="color: red;">Rp 68.000</del>
+    <ins style="color: green; text-decoration: none;">Rp 58.000</ins>
+</p>
+      </div>
+
+      <div class="card">
+        <img src="images/pizza_jamur.png" alt="Pizza Jamur">
+        <h4>Pizza Jamur</h4>
+        <ul>
+          <li>Jamur kancing segar</li>
+          <li>Keju parmesan</li>
+          <li>Saus krim lembut</li>
+          <br>
+        </ul>
+        <p>Rp 60.000</p>
+      </div>
+
+      <div class="card">
+        <img src="images/pizza_bbq.png" alt="Pizza BBQ Chicken">
+        <h4>Pizza BBQ Chicken</h4>
+        <ul>
+          <li>Daging ayam BBQ</li>
+          <li>Saus manis pedas</li>
+          <li>Bawang bombai panggang</li>
+        </ul>
+       <p> <del style="color: red;">Rp 72.000</del>
+    <ins style="color: green; text-decoration: none;">Rp 65.000</ins></p>
+      </div>
+
+      <div class="card">
+        <img src="images/pizza_meat.png" alt="Pizza Meat Lovers">
+        <h4>Pizza Meat Lovers</h4>
+        <ul>
+          <li>Daging sapi cincang</li>
+          <li>Sosis dan pepperoni</li>
+          <li>Keju leleh melimpah</li>
+          <br>
+        </ul>
+        <p>Rp 72.000</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section class="about">
+    <div class="container">
+      <h3>Flavour Supremacy</h3>
+      <p>
+        <strong>Pizza Nusantara</strong> adalah restoran pizza lokal yang menyajikan cita rasa autentik dengan sentuhan rempah khas Indonesia.  
+        Dari <em>Pepperoni Lombok</em> pedas hingga <em>Rendang Supreme</em>, setiap pizza dibuat segar dengan bahan berkualitas premium.
+      </p>
+
+          <section>
+        <div class="video-container">
+          <video autoplay muted loop playsinline poster="videos/pizza_index.jpg">
+            <source src="videos/pizza_index.mp4" type="video/mp4">
+            Browser Anda tidak mendukung pemutaran video.
+          </video>
+        </div>
+      </section>
+    </div> <!-- Tutup .container dari section.about -->
+  </section> <!-- Tutup section.about dengan benar -->
+
+  <section class="testimoni">
+    <div class="container">
+      <h3>Kata Pelanggan 💬</h3>
+
+      <div class="testi-grid">
+        <blockquote>
+          “Pizzanya luar biasa! Rasa rempahnya terasa banget, beda dari pizza luar negeri.”  
+<cite>- Rani, <u>Mahasiswi</u></cite>
+          <audio controls>
+            <source src="audio/wanita.mp3" type="audio/mp3">
+            Browser Anda tidak mendukung pemutaran audio.
+          </audio>
+        </blockquote>
+
+        <blockquote>
+          “Cheese-nya melimpah, dan crust-nya empuk banget. Top markotop!”  
+        <cite>- Aditya, <u>Buruh</u></cite>
+          <audio controls>
+            <source src="audio/pria.mp3" type="audio/mp3">
+            Browser Anda tidak mendukung pemutaran audio.
+          </audio>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 <strong>Pizza Nusantara</strong>. Semua Hak Dilindungi.</p>
+    </div>
+  </footer>
+

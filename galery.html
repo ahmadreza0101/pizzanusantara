@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeri Menu - Pizza Nusantara</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+
+    .gallery-hero {
+      background: linear-gradient(120deg, #db0700, #ff7043);
+      color: #fff;
+      text-align: center;
+      padding: 5rem 1rem;
+    }
+
+    .gallery-hero h2 {
+      font-size: 2.4rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    .gallery-hero p {
+      max-width: 700px;
+      margin: 0 auto;
+      font-size: 1.1rem;
+      color: #ffece8;
+    }
+
+    .gallery-section {
+      padding: 3rem 0;
+      text-align: center;
+    }
+
+    .gallery-section h3 {
+      color: var(--primary);
+      font-size: 1.6rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .gallery-section p {
+      color: #555;
+      margin-bottom: 2rem;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 1.5rem;
+      width: 90%;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .gallery-card {
+      background: var(--light);
+      border-radius: var(--radius);
+    }
+
+
+    .gallery-card img {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+    }
+
+    .gallery-card h4 {
+      margin-top: 0.8rem;
+      color: #333;
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+
+    .gallery-card p {
+      color: #777;
+      font-size: 0.95rem;
+      margin: 0.5rem 0 1rem;
+    }
+
+    .price {
+      font-weight: 600;
+      color: #222;
+      margin-bottom: 1rem;
+    }
+
+    @media (max-width: 768px) {
+      .gallery-hero h2 {
+        font-size: 1.9rem;
+      }
+      .gallery-grid {
+        width: 95%;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <div class="container">
+      <h1 class="logo">🍕 Pizza<span>Nusantara</span></h1>
+      <nav>
+        <ul class="nav-links">
+           <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="galery.html">Menu</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="gallery-hero">
+    <h2>Galeri Menu Kami</h2>
+    <p>Temukan berbagai menu spesial dari Pizza Nusantara  mulai dari pizza klasik, hidangan sampingan, hingga minuman segar pilihan.</p>
+  </section>
+
+  <!-- === PIZZA SECTION === -->
+  <section class="gallery-section">
+    <div class="container">
+      <h3>🍕 Pizza Favorit</h3>
+      
+
+      <div class="gallery-grid">
+        <div class="gallery-card">
+          <img src="images/pizza_mozzarela.png" alt="Pizza Mozzarella">
+          <h4>Pizza Mozzarella</h4>
+          <p>Keju mozzarella leleh & saus tomat segar yang khas.</p>
+          <div class="price">Rp 58.000</div>
+        </div>
+
+        <div class="gallery-card">
+          <img src="images/pizza_bbq.png" alt="Pizza BBQ Chicken">
+          <h4>Pizza BBQ Chicken</h4>
+          <p>Daging ayam BBQ, saus manis pedas, bawang bombai.</p>
+          <div class="price">Rp 65.000</div>
+        </div>
+
+        <div class="gallery-card">
+          <img src="images/pizza_meat.png" alt="Pizza Meat Lovers">
+          <h4>Pizza Meat Lovers</h4>
+          <p>Sosis, daging sapi, pepperoni, dan keju melimpah.</p>
+          <div class="price">Rp 72.000</div>
+        </div>
+
+        <div class="gallery-card">
+          <img src="images/pizza_jamur.png" alt="Pizza jamur">
+          <h4>Pizza jamur</h4>
+          <p>Rasa khas jamur dengan keju lembut.</p>
+          <div class="price">Rp 75.000</div>
+        </div>
+
+<div class="gallery-card">
+          <img src="images/pizza_spicy.png" alt="Pizza Spicy">
+          <h4>Pizza Spicy</h4>
+          <p>Rasa pedas gila dengan daging lembut.</p>
+          <div class="price">Rp 75.000</div>
+        </div>
+
+        <div class="gallery-card">
+          <img src="images/pizza_tuna.png" alt="Pizza Tuna">
+          <h4>Pizza Tuna</h4>
+          <p>Rasa khas tuna dengan rasa yang unik.</p>
+          <div class="price">Rp 75.000</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- === MENU LAIN === -->
+  <section class="gallery-section" style="background: var(--secondary);">
+    <div class="container">
+      <h3>🍝 Menu Lain</h3>
+      
+
+      <div class="gallery-grid">
+        <div class="gallery-card">
+          <img src="images/pasta_carbonara.png" alt="Pasta Carbonara">
+          <h4>Pasta Carbonara</h4>
+          <p>Pasta creamy dengan saus telur, keju, dan smoked beef.</p>
+          <div class="price">Rp 48.000</div>
+        </div>
+
+        <div class="gallery-card">
+          <img src="images/lasagna.png" alt="Lasagna Daging">
+          <h4>Lasagna Daging</h4>
+          <p>Lapis pasta panggang dengan saus daging & keju mozzarella.</p>
+          <div class="price">Rp 55.000</div>
+        </div>
+
+        <div class="gallery-card">
+          <img src="images/garlic_bread.png" alt="Garlic Bread">
+          <h4>Garlic Bread</h4>
+          <p>Roti lembut panggang dengan mentega bawang putih.</p>
+          <div class="price">Rp 22.000</div>
+        </div>
+
+        <div class="gallery-card">
+          <img src="images/chicken_wings.png" alt="Chicken Wings">
+          <h4>Chicken Wings</h4>
+          <p>Sayap ayam pedas manis yang renyah di luar, juicy di dalam.</p>
+          <div class="price">Rp 38.000</div>
+        </div>
+
+        <div class="gallery-card">
+           <img src="images/kentang.png" alt="French fries">
+          <h4>French Fries</h4>
+          <p>Sayap ayam pedas manis yang renyah di luar, juicy di dalam.</p>
+          <div class="price">Rp 38.000</div>
+        </div>
+
+        <div class="gallery-card">
+           <img src="images/puding.png" alt="Puding">
+          <h4>Puding</h4>
+          <p>Sayap ayam pedas manis yang renyah di luar, juicy di dalam.</p>
+          <div class="price">Rp 38.000</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- === MINUMAN === -->
+  <section class="gallery-section">
+    <div class="container">
+      <h3>🥤 Minuman Segar</h3>
+     
+
+      <div class="gallery-grid">
+        <div class="gallery-card">
+          <img src="images/lemon.png" alt="Ice Lemon Tea">
+          <h4>Ice Lemon Tea</h4>
+          <p>Teh dengan sentuhan lemon alami yang menyegarkan.</p>
+          <div class="price">Rp 15.000</div>
+        </div>
+
+        <div class="gallery-card">
+          <img src="images/coffee_latte.png" alt="Coffee Latte">
+          <h4>Coffee Latte</h4>
+          <p>Kopi susu lembut dengan aroma khas espresso.</p>
+          <div class="price">Rp 25.000</div>
+        </div>
+
+        <div class="gallery-card">
+          <img src="images/smoothie_mango.png" alt="Mango Smoothie">
+          <h4>Mango Smoothie</h4>
+          <p>Campuran buah mangga segar dengan yogurt alami.</p>
+          <div class="price">Rp 28.000</div>
+        </div>
+
+        <div class="gallery-card">
+          <img src="images/sparkling_water.png" alt="Sparkling Water">
+          <h4>Sparkling Water</h4>
+          <p>Air mineral untuk kesegaran maksimal.</p>
+          <div class="price">Rp 18.000</div>
+        </div>
+
+         <div class="gallery-card">
+          <img src="images/cappucino.png" alt="Cappucino">
+          <h4>Cappucino</h4>
+          <p>Kopi cappucino yang enak dan segar .</p>
+          <div class="price">Rp 18.000</div>
+        </div>
+
+         <div class="gallery-card">
+          <img src="images/milk.png" alt="milk Shake">
+          <h4>Milk Shake</h4>
+          <p>Minuman segar dari susu sapi berkualitas.</p>
+          <div class="price">Rp 18.000</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+    <p>&copy; 2025 <strong>Pizza Nusantara</strong>. Semua Hak Dilindungi.</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hubungi Kami - Pizza Nusantara</title>
+  <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css">
+
+  <style>
+    .contact-hero {
+      background: linear-gradient(120deg, #db0700, #ff7043);
+      color: #fff;
+      text-align: center;
+      padding: 5rem 1rem;
+    }
+
+    .contact-hero h2 {
+      font-size: 2.3rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    .contact-hero p {
+      max-width: 650px;
+      margin: 0 auto;
+      color: #ffeae4;
+    }
+
+    .contact-section {
+      padding: 3rem 0;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      align-items: start;
+    }
+
+    .contact-info {
+      background: var(--light);
+      border-radius: var(--radius);
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+      padding: 1.5rem;
+    }
+
+    .contact-info h3 {
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+
+    .contact-info ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .contact-info li {
+      margin-bottom: 0.8rem;
+      font-size: 0.95rem;
+      color: #333;
+    }
+
+    .contact-info li strong {
+      color: var(--primary);
+    }
+
+    .contact-links {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-top: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .contact-links a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      font-weight: 600;
+      color: var(--primary);
+      font-size: 0.95rem;
+    }
+
+    form {
+      background: var(--light);
+      border-radius: var(--radius);
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+      padding: 1.5rem;
+    }
+
+    form h3 {
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+
+    form label {
+      display: block;
+      margin-bottom: 0.3rem;
+      font-weight: 500;
+      color: #333;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 0.8rem;
+      border-radius: var(--radius);
+      border: 1px solid #ccc;
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+      outline: none;
+      transition: border-color 0.2s ease;
+    }
+
+    form input:focus, form textarea:focus {
+      border-color: var(--primary);
+    }
+
+    form button {
+      background: var(--primary);
+      color: #fff;
+      border: none;
+      border-radius: var(--radius);
+      padding: 0.8rem 1.5rem;
+      cursor: pointer;
+      font-weight: 600;
+      transition: background 0.25s ease;
+    }
+
+    form button:hover {
+      background: #b30000;
+    }
+
+    .map-frame {
+      width: 100%;
+      border: none;
+      border-radius: var(--radius);
+      height: 300px;
+      margin-top: 2rem;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .popup {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(0);
+      background: #fff;
+      padding: 1.5rem 2rem;
+      border-radius: var(--radius);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      text-align: center;
+      transition: 0.3s ease;
+      z-index: 1000;
+    }
+
+    .popup.active {
+      transform: translate(-50%, -50%) scale(1);
+    }
+
+    .popup h4 {
+      margin-bottom: 0.5rem;
+      color: var(--primary);
+    }
+
+    .popup button {
+      margin-top: 1rem;
+      background: var(--primary);
+      color: #fff;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: var(--radius);
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <div class="container">
+      <h1 class="logo">🍕 Pizza<span>Nusantara</span></h1>
+      <nav>
+        <ul class="nav-links">
+           <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="galery.html">Menu</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section class="contact-hero">
+    <h2>Hubungi Kami</h2>
+    <p>Kami senang mendengar dari Anda! Baik untuk pertanyaan, kritik, maupun saran tim kami siap membantu.</p>
+  </section>
+
+ 
+  <section class="contact-section">
+    <div class="container contact-grid">
+      
+     
+      <div class="contact-info">
+        <h3>Informasi Kontak</h3>
+        <ul>
+          <li><strong>Alamat:</strong> Jl. Kenanga No. 45, Jakarta Selatan</li>
+          <li><strong>Telepon:</strong> <a href="tel:+62214567890" style="color:#db0700;">(021) 456-7890</a></li>
+          <li><strong>Email:</strong> <a href="mailto:info@pizzanusantara.id" style="color:#db0700;">info@pizzanusantara.id</a></li>
+          <li><strong>Jam Operasional:</strong> 10.00 - 22.00 WIB</li>
+        </ul>
+
+        
+        <div class="contact-links">
+          <a href="https://wa.me/6281234567890" target="_blank">
+            <i class="fab fa-whatsapp" style="color:#25D366; font-size:20px; margin-right:8px;"></i> WhatsApp
+          </a>
+          <a href="https://www.instagram.com/pizzanusantara.id" target="_blank">
+            <i class="fab fa-instagram" style="color:#E4405F; font-size:20px; margin-right:8px;"></i> Instagram
+          </a>
+          <a href="https://www.facebook.com/pizzanusantara.id" target="_blank">
+            <i class="fab fa-facebook" style="color:#1877F2; font-size:20px; margin-right:8px;"></i> Facebook
+          </a>
+        </div>
+
+        <iframe
+          class="map-frame"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.396020814565!2d106.8236891!3d-6.221357999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f41b30a5f2b1%3A0x5b8e0b32f92e07b!2sJakarta!5e0!3m2!1sid!2sid!4v1709835838455!5m2!1sid!2sid"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+
+      <form id="contactForm">
+        <h3>Kirim Pesan</h3>
+        <label for="name">Nama Lengkap</label>
+        <input type="text" id="name" name="name" placeholder="Masukkan nama Anda" required>
+
+        <label for="email">Alamat Email</label>
+        <input type="email" id="email" name="email" placeholder="Masukkan email aktif" required>
+
+        <label for="subject">Subjek</label>
+        <input type="text" id="subject" name="subject" placeholder="Judul pesan" required>
+
+        <label for="message">Pesan</label>
+        <textarea id="message" name="message" rows="5" placeholder="Tulis pesan Anda..." required></textarea>
+
+        <button type="submit">Kirim Pesan</button>
+      </form>
+    </div>
+  </section>
+
+  
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 <strong>Pizza Nusantara</strong>. Semua Hak Dilindungi.</p>
+    </div>
+  </footer>
+
+
+</body>
+</html>
